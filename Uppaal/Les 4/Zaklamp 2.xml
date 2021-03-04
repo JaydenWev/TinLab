@@ -3,23 +3,30 @@
 <nta>
 	<declaration>// Place global declarations here.</declaration>
 	<template>
-		<name x="5" y="5">cooker</name>
+		<name x="5" y="5">zaklamp</name>
 		<declaration>// Place local declarations here.
 
-//temperatuur
-int[0,100] t = 20;</declaration>
-		<location id="id0" x="-297" y="-93">
-			<name x="-323" y="-127">heating</name>
+int [0,3] m;
+</declaration>
+		<location id="id0" x="-68" y="0">
+			<name x="-78" y="-34">on</name>
 		</location>
-		<location id="id1" x="-450" y="-93">
-			<name x="-460" y="-127">idle</name>
+		<location id="id1" x="-204" y="0">
+			<name x="-214" y="-34">idle</name>
 		</location>
 		<init ref="id1"/>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id1"/>
-			<nail x="-314" y="-17"/>
-			<nail x="-433" y="-17"/>
+			<nail x="-102" y="68"/>
+			<nail x="-170" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="assignment" x="8" y="-8">m++</label>
+			<nail x="0" y="-68"/>
+			<nail x="0" y="68"/>
 		</transition>
 		<transition>
 			<source ref="id1"/>
@@ -27,9 +34,9 @@ int[0,100] t = 20;</declaration>
 		</transition>
 	</template>
 	<system>// Place template instantiations here.
-//Process = Template();
+// Process = Template();
 // List one or more processes to be composed into a system.
-system cooker;
+system zaklamp;
     </system>
 	<queries>
 		<query>

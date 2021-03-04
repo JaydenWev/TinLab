@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name x="5" y="5">zaklamp</name>
+		<declaration>// Place local declarations here.</declaration>
+		<location id="id0" x="170" y="-136">
+			<name x="160" y="-170">turbo</name>
+		</location>
+		<location id="id1" x="0" y="-136">
+			<name x="-10" y="-170">high</name>
+		</location>
+		<location id="id2" x="-170" y="-136">
+			<name x="-180" y="-170">normal</name>
+		</location>
+		<location id="id3" x="-340" y="-136">
+			<name x="-350" y="-170">eco</name>
+		</location>
+		<location id="id4" x="-510" y="-136">
+			<name x="-520" y="-170">off</name>
+		</location>
+		<init ref="id4"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id4"/>
+			<nail x="136" y="-34"/>
+			<nail x="-476" y="-34"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id3"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+// Process = Template();
+// List one or more processes to be composed into a system.
+system zaklamp;
+    </system>
+	<queries>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>
