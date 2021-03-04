@@ -27,7 +27,7 @@ int [0,3] m;
 		<transition>
 			<source ref="id0"/>
 			<target ref="id3"/>
-			<label kind="assignment" x="-4946" y="-2142">m=0</label>
+			<label kind="assignment" x="-4930" y="-2278">m=0</label>
 			<nail x="-4896" y="-2142"/>
 			<nail x="-4896" y="-2278"/>
 			<nail x="-5270" y="-2278"/>
@@ -45,7 +45,7 @@ int [0,3] m;
 		<transition>
 			<source ref="id3"/>
 			<target ref="id2"/>
-			<label kind="assignment" x="-5252" y="-2142">m=1</label>
+			<label kind="assignment" x="-5253" y="-2142">m=1</label>
 		</transition>
 		<transition>
 			<source ref="id0"/>
