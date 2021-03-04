@@ -8,29 +8,92 @@
 
 int [0,3] m;
 </declaration>
-		<location id="id0" x="-68" y="0">
-			<name x="-78" y="-34">on</name>
+		<location id="id0" x="-4964" y="-2142">
+			<name x="-4998" y="-2167">turbo</name>
 		</location>
-		<location id="id1" x="-204" y="0">
-			<name x="-214" y="-34">idle</name>
+		<location id="id1" x="-5066" y="-2142">
+			<name x="-5100" y="-2167">high</name>
 		</location>
-		<init ref="id1"/>
+		<location id="id2" x="-5168" y="-2142">
+			<name x="-5219" y="-2167">normal</name>
+		</location>
+		<location id="id3" x="-5270" y="-2142">
+			<name x="-5304" y="-2167">eco</name>
+		</location>
+		<location id="id4" x="-5406" y="-2244">
+			<name x="-5416" y="-2278">idle</name>
+		</location>
+		<init ref="id4"/>
 		<transition>
 			<source ref="id0"/>
-			<target ref="id1"/>
-			<nail x="-102" y="68"/>
-			<nail x="-170" y="68"/>
-		</transition>
-		<transition>
-			<source ref="id0"/>
-			<target ref="id0"/>
-			<label kind="assignment" x="8" y="-8">m++</label>
-			<nail x="0" y="-68"/>
-			<nail x="0" y="68"/>
+			<target ref="id3"/>
+			<label kind="assignment" x="-4946" y="-2142">m=0</label>
+			<nail x="-4896" y="-2142"/>
+			<nail x="-4896" y="-2278"/>
+			<nail x="-5270" y="-2278"/>
 		</transition>
 		<transition>
 			<source ref="id1"/>
 			<target ref="id0"/>
+			<label kind="assignment" x="-5048" y="-2142">m=3</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="assignment" x="-5150" y="-2142">m=2</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id2"/>
+			<label kind="assignment" x="-5252" y="-2142">m=1</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id4"/>
+			<nail x="-4964" y="-2074"/>
+			<nail x="-5406" y="-2074"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id4"/>
+			<nail x="-5066" y="-2074"/>
+			<nail x="-5406" y="-2074"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id4"/>
+			<nail x="-5168" y="-2074"/>
+			<nail x="-5406" y="-2074"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id4"/>
+			<nail x="-5270" y="-2074"/>
+			<nail x="-5406" y="-2074"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-5006" y="-2210">m==3</label>
+			<nail x="-4964" y="-2244"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-5108" y="-2210">m==2</label>
+			<nail x="-5066" y="-2244"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-5210" y="-2210">m==1</label>
+			<nail x="-5168" y="-2244"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-5312" y="-2210">m==0</label>
+			<nail x="-5270" y="-2244"/>
 		</transition>
 	</template>
 	<system>// Place template instantiations here.
