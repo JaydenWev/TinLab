@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+
+//element declareren
+typedef int[0,10] id_e;
+
+//kanalen
+chan send, receive;
+
+//shared variable voor uitwisseling
+id_e shared;
+
+
+const int MAXMACHINE=2;
+typedef int [0,MAXMACHINE-1] id_m;</declaration>
+	<template>
+		<name x="5" y="5">generator</name>
+		<declaration>// Place local declarations here.
+
+clock x;
+
+id_e v;</declaration>
+		<location id="id0" x="0" y="0">
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="select" x="76" y="-42">v:id_e</label>
+			<label kind="guard" x="76" y="-26">x&gt;=1</label>
+			<label kind="synchronisation" x="76" y="-9">send!</label>
+			<label kind="assignment" x="76" y="8">x:=0,shared:=v</label>
+			<nail x="68" y="-68"/>
+			<nail x="68" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>machine</name>
+		<parameter>id_m m</parameter>
+		<declaration>
+
+//maximum groote van de stack
+const int MAXSIZE=5;
+
+
+id_e stack[MAXSIZE];
+int[0,MAXSIZE] head =0;
+
+void push(id_e e)
+{
+    stack[head++]=e;
+}
+id_e pop()
+{
+    id_e temp;
+    temp=stack[--head];
+    stack[head]=0;
+    return temp;
+}
+
+bool isFull()
+{
+    return(head==MAXSIZE);
+}
+
+bool isEmpty()
+{
+    return(head==0);
+}
+
+bool isForMe(id_e e)
+{
+    if(e%2==m)return true;//if even
+    else return false;
+}</declaration>
+		<location id="id1" x="-34" y="0">
+		</location>
+		<location id="id2" x="-442" y="0">
+			<label kind="invariant" x="-603" y="-17">isForMe(stack[head-1])</label>
+			<committed/>
+		</location>
+		<location id="id3" x="-238" y="0">
+		</location>
+		<init ref="id3"/>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+			<nail x="-68" y="68"/>
+			<nail x="-204" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-170" y="-119">!isEmpty()</label>
+			<label kind="synchronisation" x="-170" y="-102">receive?</label>
+			<label kind="assignment" x="-170" y="-85">shared:=pop()</label>
+			<nail x="-204" y="-68"/>
+			<nail x="-68" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id3"/>
+			<nail x="-408" y="-68"/>
+			<nail x="-272" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-381" y="68">!isFull()</label>
+			<label kind="synchronisation" x="-381" y="85">send?</label>
+			<label kind="assignment" x="-382" y="102">push(shared)</label>
+			<nail x="-272" y="68"/>
+			<nail x="-408" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>sink</name>
+		<declaration>id_e e;</declaration>
+		<location id="id4" x="170" y="0">
+			<committed/>
+		</location>
+		<location id="id5" x="0" y="0">
+		</location>
+		<init ref="id5"/>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id5"/>
+			<label kind="assignment" x="68" y="136">e:=shared</label>
+			<nail x="170" y="136"/>
+			<nail x="0" y="136"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id4"/>
+			<label kind="synchronisation" x="68" y="-17">receive!</label>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+// Process = Template();
+// List one or more processes to be composed into a system.
+system generator,machine,sink;</system>
+	<queries>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>
