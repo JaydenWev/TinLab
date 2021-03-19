@@ -72,8 +72,8 @@ bool isEmpty()
 
 bool isForMe(id_e e)
 {
-    if(e%2==m)return true;//if even
-    else return false;
+    if(e%2==m)return true;//if even number
+    else return false; //if uneven number
 }</declaration>
 		<location id="id1" x="-34" y="0">
 		</location>
