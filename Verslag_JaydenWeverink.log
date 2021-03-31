@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.31)  31 MAR 2021 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.31)  31 MAR 2021 17:05
 entering extended mode
 **./Verslag_JaydenWeverink.tex
 (Verslag_JaydenWeverink.tex
@@ -185,7 +185,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--98
 
  []
 
-[2] [3] [4] [5]
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
+
+ []
+
+[3] [4]
 No file Verslag_JaydenWeverink.bbl.
 (Verslag_JaydenWeverink.aux)
 
@@ -207,9 +212,9 @@ ublic/amsfonts/cm/cmr10.pfb><D:/Users/jayde/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmss10.pfb><D:/Users/jayde/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Users/jayde/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on Verslag_JaydenWeverink.pdf (6 pages, 96736 bytes).
+Output written on Verslag_JaydenWeverink.pdf (5 pages, 96150 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
