@@ -1,0 +1,86 @@
+% Persoonlijk verslag van TinLab AA
+% Mathematical Symbols:
+% https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+\documentclass{article}% article report slides book letter beamer memoir minimal proc 
+\usepackage{graphicx}
+\usepackage{verbatim}% for multi line comments
+\usepackage[dutch]{babel}
+\usepackage{gensymb}% graden teken
+\begin{document}
+\sffamily
+\begin{titlepage}
+  \centering
+    \vfill
+    {\bfseries\Huge
+      Verslag Wiskunde Advanced Algorithms \\
+        \vskip2cm
+      }
+      {\bfseries\Large
+        J. I. Weverink\\
+      }
+      {
+        \bfseries\normalsize
+        \ldots\\
+        \vskip1cm
+        \today\\
+    }    
+    \vfill
+    \includegraphics[width=4cm]{pictures/logohr.png} % also works with logo.pdf
+    \vfill
+    \vfill
+\end{titlepage}
+\newpage
+\tableofcontents
+
+\newpage
+\section{Inleiding}
+Zie hier een referentie naar Royce~\cite{royce1987managing} en nog een naar Clarke~\cite{modelchecking}\ldots 
+
+\clearpage
+
+\section{Opdracht Les 2}
+
+\subsection{\normalsize{Ga na hoe floating point getallen werken.}}
+Een 'floating point' kan worden opgedeeld in twee delen.
+\begin{itemize}
+\item Het eerste deel waar het uit bestaat is de significantie van het getal. Dit is waar de cijfers worden opgeslagen in de computer. Als de significantie negatief is dan is het getal ook negatief.
+
+\item Het tweede deel is het exponent. Dit geeft de magnitude van het getal aan. Wat betekend dat de exponent bepaald wat er voor de komma komt te staan.Een positief exponent zorgt voor een hoger getal, en een negatief exponent voor lager getal.
+\end{itemize}
+Dit bij elkaar vormd de wetenschappelijke notatie: \small{\textit{significantie*10}\normalsize{\textsuperscript{exponent}}}. Hier wordt er vanuit gegaan dat er vanuit de basis 10 wordt gewerkt. Hierdoor is het mogelijk om berekeningen te maken van verschillende magnitudes, zonder voor zover mogelijk nauwkeurigheid te verliezen tussen de magnitudes.
+
+\subsection{\normalsize{Beschrijf hoe deze worden weergegeven in de computer.}}
+Het voorste getal zal altijd een plek voor de komma(of punt) komen te staan. Dit is de gebruikelijke manier van notatie. Het kan dus eigenlijk niet verder afwijken, omdat het anders moet worden meegenomen in het exponent.
+
+\subsection{\normalsize{Welke fout maak je?}}
+Door dat de computer met bits werkt, wordt er gerekend met een basis van 2. Hierdoor kan je een inschattingsfout maken over de maximale nauwkeurigheid van de ‘floating point’ getal.
+
+\subsection{\normalsize{Beschrijf het verschil tussen single precision and double precision. Welke fout maak je?}}
+Het verschil tussen ‘single precision’ en ‘double precision’ zit in het aantal beschikbare bits. Voor ‘single precision’ is dat 32 bits en voor ‘double precision’ is dat 64 bits
+
+Je zou misschien zeggen dat 'double precision' tweemaal zo "lang" kan zijn, of tweemaal zo precies. Dit is echter niet het geval. Dit komt doordat de bits zijn gereserveerd voor specifieke delen van de ‘floating point’. Omdat er verhoudingswijs bij ‘double precision’ minder bits nodig zijn voor, of minder toegekend aan, het exponent gedeelte. Relatief gezien blijven dus meer bits over voor de significantie. Tegen natuurlijke verwachtingen in is dus de maximale grootte van ‘double precision’ groter dan de maximale grootte van ‘single precision’ in het kwadraat.
+
+\clearpage
+\section{Opdracht Les 3}
+\subsection{\normalsize{Programmeer de methode van NR in een zelfgekozen taal of applicatie en los op: f(x) = 0 gebruik verschillende startwaardes.}}
+
+\section{Opdracht Les 4}
+\subsection{\normalsize{bepaal een nulpunt van f(x) = e\textsuperscript{x}-x\textsuperscript{2}+3x-2}}
+
+\section{Opdracht Les 5}
+\subsection{\normalsize{Beschrijf kort wat bedoeld wordt met "Supervised Machine Learning". Noem vooral de belangrijkste kenmerken.}}
+
+Supervised Machine Learning is het trainen an een model. Voor het trainen van een model wordt met een dataset gebruikt waarvan de uitkomsten al bekent zijn. 
+Zo kan het model getrained onder 'supervisie'.
+
+\subsection{\normalsize{Geef aan waarom Regressie wel wordt beschouwd als een vorm van Supervised Machine Learning. Geef aan welke kenmerken van Regressie het hier een vorm van maken.}}
+Net als bij supervised machine learning wordt bij regressie gebruik gemaakt van een dataset waarvan de uitkomsten bekend zijn. Hierbij wordt een formule opgesteld, die kan worden gebruikt om voorspellingen te maken.
+
+\newpage
+
+\newpage
+\bibliography{references}
+\bibliographystyle{plain}
+\end{document}
+
+
