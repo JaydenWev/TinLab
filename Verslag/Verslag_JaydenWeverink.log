@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  7 APR 2021 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  7 APR 2021 18:57
 entering extended mode
 **./Verslag_JaydenWeverink.tex
 (Verslag_JaydenWeverink.tex
@@ -227,13 +227,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Verslag_JaydenWeverink.toc'.
 
- [1]
+ [1] [2]
 
-LaTeX Warning: Citation `royce1987managing' on page 2 undefined on input line 3
+LaTeX Warning: Citation `royce1987managing' on page 3 undefined on input line 3
 8.
 
 
-LaTeX Warning: Citation `modelchecking' on page 2 undefined on input line 38.
+LaTeX Warning: Citation `modelchecking' on page 3 undefined on input line 38.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
@@ -243,8 +243,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
 LaTeX Warning: Characters dropped after `\end{comment}' on input line 85.
 
-[2]
-<pictures/4_var_model.png, id=21, 567.11874pt x 213.79875pt>
+[3]
+<pictures/4_var_model.png, id=24, 567.11874pt x 213.79875pt>
 File: pictures/4_var_model.png Graphic file (type png)
 <use pictures/4_var_model.png>
 Package pdftex.def Info: pictures/4_var_model.png  used on input line 99.
@@ -252,9 +252,9 @@ Package pdftex.def Info: pictures/4_var_model.png  used on input line 99.
 
 
 LaTeX Warning: Citation `https://www.researchgate.net/figure/4-Variable-Model-o
-f-Parnas-Madey_fig3_270733268' on page 3 undefined on input line 101.
+f-Parnas-Madey_fig3_270733268' on page 4 undefined on input line 101.
 
-[3 <./pictures/4_var_model.png (PNG copy)>]
+[4 <./pictures/4_var_model.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 171.
 
@@ -263,7 +263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--179
 
  []
 
-[4] [5] [6]
+[5] [6] [7]
 No file Verslag_JaydenWeverink.bbl.
 (Verslag_JaydenWeverink.aux)
 
@@ -287,9 +287,9 @@ ype1/public/amsfonts/cm/cmr10.pfb><D:/Users/jayde/AppData/Local/Programs/MiKTeX
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Users/jayde/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/Users/jayde
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Verslag_JaydenWeverink.pdf (7 pages, 140601 bytes).
+Output written on Verslag_JaydenWeverink.pdf (8 pages, 141239 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
