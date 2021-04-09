@@ -65,33 +65,34 @@ Requirements zijn onder te verdelen in verschillende delen:
 \item Logistical requirement
 \end{itemize}
 \end{multicols}
-TODO SOFTWARE REQUIREMENTS\\
 
 %	https://www.sebokwiki.org/wiki/System_Requirements#Definition_and_Purpose_of_Requirements
 % Hoe krijgt men requirements
 % Wat voor requirements elication technieken zijn er zoal?
 % 	functional, performance, constraint
 % Wat is het verschil tussen functionelen en non--functionelen requirements?
-\subsubsection{Functionele eisen en niet-functionele eisen}
-Functionele eisen geven aan wat het systeem moet doen en kunnen. Niet-functionele eisen geven de eigenschappen aan van het systeem, zoals snelheid, veiligheid en bruikbaarheid. Met andere woorden functionele eisen geven informatie over het "wat". niet-functionele eisen geven informatie over het "hoe"
+Onder deze verschillende requirements zijn er nog twee soorten, functionele en niet-functionele requirements. 
+Functionele requirements geven aan wat het systeem moet doen en kunnen. Niet-functionele requirements geven de eigenschappen aan van het systeem, zoals snelheid, veiligheid en bruikbaarheid. Met andere woorden functionele requirements geven informatie over het "wat". niet-functionele requirements geven informatie over het "hoe".
+
 % wat is mode confusion?
+\subsubsection{Mode confusion?}
+De naam van het begrip zegt het eigenlijk allemaal. Bij mode confusion maakt de gebruiker een vergissing in de huidige of geactiveerde modus van het systeem. De gebruiker denk dat het systeem in modus A staat terwijl het werkelijk in modus B staat. 
 %	mode van een apparaat bijv. auto in sport en eco modus
+
 % Wat verstaat men onder automatiseringparadox
-\begin{comment}% ================================================================
-Requirements zijn opgesteld tijdens het opzetten van een project. het systeem moet aan deze punten voldoen.
-\\
-Gaan uitsluitend over wereld fenomeen, in termen van het probleem niet techniek
-\\
-\end{comment}% ==================================================================
+\subsubsection{Automatisering paradox}
+Automatiseringsparadox. Wanneer een systeem is dat volledig geautomatiseerd moet worden is er altijd een wel een stap die dat nog niet is. Wanneer er een stap is geautomatiseerd moet er weer iets anders geautomatiseerd worden, om het hele systeem automatisch te krijgen.
 
 \subsection{specificaties}
 %system specifications	software specifications
-Uitspraak over gedeelde fenomenen of doelen die de machine moet bereiken middels de onderdelen waar die machine uit bestaat of middels de fenomenen waar de machine controle over heeft.
-\\
-Doorgaands preciezer, meetbaar, exact geformuleerd.
-\\
-Wel precies, beschrijven hoe de machine vanuit zijn mogelijkheden de doelen opgesteld in de requirements kan bereiken.
+Specificaties zijn eigenlijk niet heel veel anders dan requirements. ze beschrijven beide een systeem of een deelsysteem. Het grote verschil tussen de twee is de grenzen die ze opleggen. Bij requirements is er ruimte voor interpetatie, bij specificaties is die ruimte voor interpetatie er niet.
 
+De specificaties geven geen ruimte voor interpetatie, omdat ze 'meetbare' informatie bevatten. In specificaties worden meetbare eenheden gebruikt, zoals 10 meter of 10$^{\circ}$C. Door dat de eisen een meetbare eenheid bevatten kan hiervan niet worden afgewezen. Deze specificaties zullen dan ook niet veranderen als het wordt gebruikt in een ander land, doordat de eenheden zijn gegeven.
+\\
+
+Stel we nemen het eerder genoemde requirement voorbeeld: "Binnen moet het altijd warm zijn." Als we dit vertalen naar een specificatie wordt het: "Binnen moet het altijd minimaal 20$^{\circ}$C zijn."
+
+\clearpage
 \subsection{Het vier variabelen model}
 % Het 6 variable model
 Sensoren Software Actuatoren Omgeving
