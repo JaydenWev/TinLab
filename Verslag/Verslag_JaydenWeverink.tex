@@ -6,7 +6,7 @@
 \usepackage{verbatim}% for multi line comments
 \usepackage[dutch]{babel}
 \usepackage{gensymb}% graden teken
-\usepackage{multicol} %
+\usepackage{multicol}
 \begin{document}
 \sffamily
 \begin{titlepage}
@@ -95,38 +95,34 @@ Stel we nemen het eerder genoemde requirement voorbeeld: "Binnen moet het altijd
 \clearpage
 \subsection{Het vier variabelen model}
 % Het 6 variable model
-Sensoren Software Actuatoren Omgeving
-\\
-\includegraphics[width=10cm]{pictures/4_var_model.png}
-\\
+\hspace*{2cm}\includegraphics[width=10cm]{pictures/4_var_model.png}
+
 \cite{https://www.researchgate.net/figure/4-Variable-Model-of-Parnas-Madey_fig3_270733268}
 % source https://www.researchgate.net/figure/4-Variable-Model-of-Parnas-Madey_fig3_270733268
 
 \subsubsection{Monitored variabelen}
-Wat gemeten wordt vanuit de omgeving:
+Monitored variabelen zijn waarnemingen die kunnen worden gemeten vanuit de omgeving. De waarnemingen worden gemeten door sensoren, de gemeten data wordt als input gebruikt. Voorbeelden van zulke waarnemingen zijn:
 \begin{itemize}
   \item Temperatuur
   \item Licht intensiteit
   \item Luchtvochtigheid
-  \item Wat je allemaal met sensoren kunt meten
+  %\item Wat je allemaal met sensoren kunt meten
 \end{itemize}
 
 \subsubsection{Controlled variabelen}
-Kunnen worden "bestuurd" door actuatoren:
+Controlled variablen zijn waarnemingen die in zekere zin beïnvloed kunnen worden. Zo kunnen de controlled variabelen 'bestuurd' worden, er is controle over.Voorbeelden van controleerbare waarnemingen zijn:
 \begin{itemize}
   \item Temperatuur
   \item Licht intensiteit
-  \item Wat je allemaal kan beinvloeden
+  %\item Wat je allemaal kan beinvloeden
 \end{itemize}
 
 \subsubsection{Input variabelen}
-De data, die staan voor de gemeten waardes vanuit de omgeving, die als input door de software worden gebruikt.
+Input variablen zijn de waardes, of de data, die een sensor doorstuurt naar de software die het systeem bestuurd. Deze data staat voor de waardes die de sensor heeft gemeten vanuit de omgeving. Omdat de sensor de gemeten waardes heeft omgezet in data kan dit worden gebruikt in de software, om bijvoordbeeld berekeningen mee te maken.
 
 \subsubsection{Output variabelen}
-De data die de software levert als output. Waar de actuatoren op moeten handelen.
-% ===============================================================================
-% ===============================================================================
-% ===============================================================================
+Output variabelen zijn de 'uitkomsten' van de software die worden uitgelezen door de actuatoren. De actuatoren handelen aan de hand van de output van de software.
+
 \subsection{Rampen}
 
 \subsubsection{Ramp 1}
@@ -154,6 +150,13 @@ De data die de software levert als output. Waar de actuatoren op moeten handelen
 \end{description}
 
 \subsubsection{Ramp 4}
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+  %Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
 \subsubsection{Ramp 5}
 \subsubsection{Ramp 6}
 
@@ -187,23 +190,14 @@ duidelijheid vs. gedeeld jargon/semantiek
 Guards zijn voorwaarden waaraan moet worden voldaan voordat een status kan worden gemaakt.
 
 \subsection{Deadlock}
-
 \subsection{Zeno gedrag}
-
 \section{Logica}
-
 \subsection{Propositielogica}
-
 \subsection{Predicatenlogica}
-
 \subsection{Kwantoren}
-
 \subsection{Dualiteiten}
-
 \section{Computation tree logic}
-
 \subsection{De computation tree}
-
 \subsection{Operator: AG}
 De betekenis van AG is makkelijk te onthouden A = Always, G = Globally. Dit houdt in dat het niet uit maakt waar je bent, je zal altijd van welke positie dan ook bij een gedefinieerd punt uitkomen.
 
@@ -211,21 +205,14 @@ De betekenis van AG is makkelijk te onthouden A = Always, G = Globally. Dit houd
 De betekenis van AG is makkelijk te onthouden E = Exists, G = Globally.
 
 \subsection{Operator: AF}
-De betekenis van AG is makkelijk te onthouden A = Always, F = Eventually.
+De betekenis van AF is makkelijk te onthouden A = Always, F = Eventually.
 \subsection{Operator: EF}
-
 \subsection{Operator: AX}
-
 \subsection{Operator: EX}
-
 \subsection{Operator: p U q}
-
 \subsection{Operator: p R q}
-
 \subsection{Fairness}
-
 \subsection{Liveness}
-
 \newpage
 
 \newpage

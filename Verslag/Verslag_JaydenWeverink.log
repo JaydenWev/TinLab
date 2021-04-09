@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  9 APR 2021 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  9 APR 2021 21:23
 entering extended mode
 **./Verslag_JaydenWeverink.tex
 (Verslag_JaydenWeverink.tex
@@ -244,21 +244,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
 <pictures/4_var_model.png, id=27, 567.11874pt x 213.79875pt>
 File: pictures/4_var_model.png Graphic file (type png)
 <use pictures/4_var_model.png>
-Package pdftex.def Info: pictures/4_var_model.png  used on input line 100.
+Package pdftex.def Info: pictures/4_var_model.png  used on input line 98.
 (pdftex.def)             Requested size: 284.52756pt x 107.26775pt.
 
 
 LaTeX Warning: Citation `https://www.researchgate.net/figure/4-Variable-Model-o
-f-Parnas-Madey_fig3_270733268' on page 5 undefined on input line 102.
+f-Parnas-Madey_fig3_270733268' on page 5 undefined on input line 100.
+
+
+Overfull \hbox (4.00044pt too wide) in paragraph at lines 113--114
+\OT1/cmss/m/n/10 Zo kun-nen de con-trol-led va-ri-a-be-len 'be-stuurd' wor-den,
+ er is con-trole over.Voorbeelden
+ []
 
 [5
 
  <./pictures/4_var_model.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 172.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 178.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--180
+Underfull \hbox (badness 10000) in paragraph at lines 167--186
 
  []
 
@@ -270,10 +276,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2214 strings out of 479321
- 33901 string characters out of 2856584
+ 2212 strings out of 479321
+ 33875 string characters out of 2856584
  351266 words of memory out of 3000000
- 19683 multiletter control sequences out of 15000+600000
+ 19681 multiletter control sequences out of 15000+600000
  406826 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,5n,74p,643b,206s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -286,7 +292,7 @@ ype1/public/amsfonts/cm/cmr10.pfb><D:/Users/jayde/AppData/Local/Programs/MiKTeX
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Users/jayde/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/Users/jayde
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Verslag_JaydenWeverink.pdf (9 pages, 143314 bytes).
+Output written on Verslag_JaydenWeverink.pdf (9 pages, 143983 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
