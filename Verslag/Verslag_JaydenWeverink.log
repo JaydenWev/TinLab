@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  10 APR 2021 15:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  10 APR 2021 16:49
 entering extended mode
 **./Verslag_JaydenWeverink.tex
 (Verslag_JaydenWeverink.tex
@@ -247,12 +247,12 @@ File: pictures/4_var_model.png Graphic file (type png)
 Package pdftex.def Info: pictures/4_var_model.png  used on input line 98.
 (pdftex.def)             Requested size: 284.52756pt x 107.26775pt.
 
+Overfull \hbox (9.43306pt too wide) in paragraph at lines 98--101
+| [] \OT1/cmss/m/n/10 [[]] 
+ []
 
-LaTeX Warning: Citation `https://www.researchgate.net/figure/4-Variable-Model-o
-f-Parnas-Madey_fig3_270733268' on page 5 undefined on input line 100.
 
-
-Overfull \hbox (4.00044pt too wide) in paragraph at lines 113--114
+Overfull \hbox (4.00044pt too wide) in paragraph at lines 112--113
 \OT1/cmss/m/n/10 Zo kun-nen de con-trol-led va-ri-a-be-len 'be-stuurd' wor-den,
  er is con-trole over.Voorbeelden
  []
@@ -261,26 +261,38 @@ Overfull \hbox (4.00044pt too wide) in paragraph at lines 113--114
 
  <./pictures/4_var_model.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 176.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 157.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--184
+Underfull \hbox (badness 10000) in paragraph at lines 145--165
 
  []
 
-[6] [7] [8]
+[6] [7]
 No file Verslag_JaydenWeverink.bbl.
-(Verslag_JaydenWeverink.aux)
+
+Overfull \hbox (103.58398pt too wide) in paragraph at lines 204--206
+\OT1/cmtt/m/n/10 https://www.researchgate.net/figure/4-Variable-Model-of-Parnas
+-Madey[]fig3[]270733268 
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 209.
+
+[8] (Verslag_JaydenWeverink.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2212 strings out of 479321
- 33875 string characters out of 2856584
- 351266 words of memory out of 3000000
- 19681 multiletter control sequences out of 15000+600000
- 406826 words of font info for 38 fonts, out of 8000000 for 9000
+ 2222 strings out of 479321
+ 34005 string characters out of 2856584
+ 351236 words of memory out of 3000000
+ 19689 multiletter control sequences out of 15000+600000
+ 407345 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,5n,74p,643b,206s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\jayde\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -291,10 +303,13 @@ ype1/public/amsfonts/cm/cmr10.pfb><D:/Users/jayde/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Users/jayde/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Users/jayde/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/Users/jayde
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Verslag_JaydenWeverink.pdf (9 pages, 144111 bytes).
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><D:/Us
+ers/jayde/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><D:/Users/jayde/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmtt10.pfb>
+Output written on Verslag_JaydenWeverink.pdf (9 pages, 170601 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
