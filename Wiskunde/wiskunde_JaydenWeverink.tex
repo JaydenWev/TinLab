@@ -12,11 +12,11 @@
   \centering
     \vfill
     {\bfseries\Huge
-      Verslag Wiskunde Advanced Algorithms \\
+      Verslag Advanced Algorithms\\{\huge Wiskunde}
         \vskip2cm
       }
       {\bfseries\Large
-        J. I. Weverink\\
+        A. J. Ruigrok\\\&\\J. I. Weverink\\
       }
       {
         \bfseries\normalsize
@@ -33,11 +33,11 @@
 \tableofcontents
 
 \newpage
-\section{Inleiding}
-Zie hier een referentie naar Royce~\cite{royce1987managing} en nog een naar Clarke~\cite{modelchecking}\ldots 
+ 
 
 \clearpage
 
+\setcounter{section}{1}
 \section{Opdracht Les 2}
 
 \subsection{\normalsize{Ga na hoe floating point getallen werken.}}
@@ -63,24 +63,36 @@ Je zou misschien zeggen dat 'double precision' tweemaal zo "lang" kan zijn, of t
 \clearpage
 \section{Opdracht Les 3}
 \subsection{\normalsize{Programmeer de methode van NR in een zelfgekozen taal of applicatie en los op: f(x) = 0 gebruik verschillende startwaardes.}}
+Als we achtereenvolgens de waardes 1 t/m 6 in de formule stoppen dan krijgen we de volgende resultaten.\\
+x = 1:0.910008\\
+x = 2:0.910008\\
+x = 3:3.73308\\
+x = 4:3.73308\\
+x = 5:3.73308\\
+x = 6:3.73308\\
+
+
 
 \section{Opdracht Les 4}
 \subsection{\normalsize{bepaal een nulpunt van f(x) = e\textsuperscript{x}-x\textsuperscript{2}+3x-2}}
+De benadering van het nulpunt is 0.257812, de code is bijgevoegd die gelijk gerund kan worden. Voor deze opdracht is de main de functie lesVier(); gebruikt.
+
+\subsection{\normalsize{Benader $\int_{1}^{5} \frac{e^x}{x} \,dx$ met de repeterende trapeziumregel. Neem achtereebvolgens: n=1, n=4, n=10}} 
+n = 1: 129.604\\
+n = 4: 56.4402\\
+n = 10: 33.2131\\
+Ook voor deze opdracht is de uitwerking te vinden in de toegevoegde code. 
+
 
 \section{Opdracht Les 5}
 \subsection{\normalsize{Beschrijf kort wat bedoeld wordt met "Supervised Machine Learning". Noem vooral de belangrijkste kenmerken.}}
 
 Supervised Machine Learning is het trainen an een model. Voor het trainen van een model wordt met een dataset gebruikt waarvan de uitkomsten al bekent zijn. 
-Zo kan het model getrained onder 'supervisie'.
+Zo kan het model getrained onder 'supervisie'. Het model gokt een bepaalde uitkomst en krijgt als antwoord terug of het correct is of niet. Hoe meer data hij voor zijn neus geschoteld krijgt hoe accurater de ‘gok’ wordt.
 
 \subsection{\normalsize{Geef aan waarom Regressie wel wordt beschouwd als een vorm van Supervised Machine Learning. Geef aan welke kenmerken van Regressie het hier een vorm van maken.}}
 Net als bij supervised machine learning wordt bij regressie gebruik gemaakt van een dataset waarvan de uitkomsten bekend zijn. Hierbij wordt een formule opgesteld, die kan worden gebruikt om voorspellingen te maken.
 
-\newpage
-
-\newpage
-\bibliography{references}
-\bibliographystyle{plain}
 \end{document}
 
 

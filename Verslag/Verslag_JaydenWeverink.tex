@@ -124,7 +124,7 @@ Output variabelen zijn de 'uitkomsten' van de software die worden uitgelezen doo
 
 \subsection{Rampen}
 
-\subsubsection{Ramp 1}
+\subsubsection{Therac-25}
 \begin{description}
 \item[Beschrijving]
 \item[Datum en plaats] 
@@ -132,16 +132,17 @@ Output variabelen zijn de 'uitkomsten' van de software die worden uitgelezen doo
   %Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
 
-\subsubsection{Ramp 2}
+\subsubsection{Vlucht 1951}
 
-\subsubsection{Ramp 3}
+\subsubsection{Tsjernobyl 1986}
 
-\subsubsection{Ramp 4}
+\subsubsection{Ethiopian Airlines 302}
 
 \subsubsection{Ramp 5}
 \subsubsection{Ramp 6}
 
 \section{Modellen}
+
 ********** NOTES **********\\
 Een goed model heeft een duidelijk object dat gemodelleerd moet worden, er is duidelijk \textbf{wat} er beschreven moet worden.
 \\
@@ -162,14 +163,26 @@ Richtlijnen (tegenstrijdig heden:
 \\
 Waarheidgetrouw vs simpelheid
 duidelijheid vs. gedeeld jargon/semantiek
+
 \subsection{De Kripke structuur}
+
 
 \subsection{Soorten modellen}
 
 \subsection{Tijd}
 
 \subsection{Guards en invarianten}
-Guards zijn voorwaarden waaraan moet worden voldaan voordat een status kan worden gemaakt.
+Guards zijn voorwaarden waaraan moet worden voldaan voordat een transitie genomen kan worden. Het is als het ware een "if statement", is de uitkomst niet true dan kan de transitie niet genomen worden.
+
+% invariant [https://link.springer.com/chapter/10.1007/978-88-470-2107-5_4]
+Invariant theory is al heel oud en komt oorspronkelijk uit de wiskunde. Over de jaren heen heeft het verschillende betekenissen gekregen. Hermann Weyl legt dit uitgebreid uit in zijn boek \textit{The Classical Groups}. \cite{classicalgroups} G. Rota haal uit het boek van Weyl 2 beweringen. De eerste "all geometric facts are expressed by the vanishing of invariants". en de tweede "all invariants are invariants of tensors". Echter denk ik dat deze beweringen niet van toepassing zijn in deze context.
+
+In de context van de opdracht zijn invarianten voorwaarden die kunnen worden vastgesteld aan een status. De state moet worden verlaten zodra de invariant niet meer van kracht is(als de voorwaarde niet meer behaald is) en zal geforceerd worden een beschikbare transitie te nemen.
+\vskip1cm
+heeft in zijn geschiedenis 
+ He summarized this program in two basic assertions. 
+The first states that "all geometric facts are expressed by the vanishing of invariants", 
+and the second states that "all invariants are invariants of tensors"
 
 \subsection{Deadlock}
 \subsection{Zeno gedrag}
@@ -199,15 +212,27 @@ De betekenis van AF is makkelijk te onthouden A = Always, F = Eventually.
 
 \newpage
 \bibliography{references} % DIT ZIJN VOORBEELDEN
+********** EXAMPLES **********
 \begin{thebibliography}{9}
+\bibliography{refrences}
 \bibitem{variabelmodel} 
 Knuth: Use of Tabular Expressions for Refinement Automation,
 \\\texttt{https://www.researchgate.net/figure/4-Variable-Model-of-Parnas-Madey\_fig3\_270733268}
+%https://www-fourier.ujf-grenoble.fr/~panchish/ETE%20LAMA%202018-AP/Weyl_The%20Classical%20Groups.pdf
+\bibitem{classicalgroups} 
+WEYL, H (1966).
+\textit{The Classical Groups: Their Invariants and Representations.}.\\ 
+PRINCETON, NEW JERSEY: Princeton University Press.
 
 \bibitem{latexcompanion} 
 Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
 \textit{The \LaTeX\ Companion}. 
 Addison-Wesley, Reading, Massachusetts, 1993.
+
+\bibitem{rota} 
+Rota G. -C. (2001).
+\textit{Algebraic Combinatorics and Computer Science: A Tribute to Gian-Carlo Rota}.
+Crapo, H. and Senato, D., Springer Milan.
 
 \bibitem{einstein} 
 Albert Einstein. 
@@ -223,4 +248,8 @@ Knuth: Computers and Typesetting,
 
 \end{document}
 
+
+% book:
+% author (release year). \textit{title}\\
+% Editors. Publisher. 
 
