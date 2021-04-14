@@ -37,6 +37,8 @@
 \section{Inleiding}
 Zie hier een referentie naar Royce~\cite{royce1987managing} en nog een naar Clarke~\cite{modelchecking}\ldots 
 
+\clearpage
+
 \section{Requirements}
 
 \subsection{Requirements}
@@ -75,7 +77,7 @@ Onder deze verschillende requirements zijn er nog twee soorten, functionele en n
 Functionele requirements geven aan wat het systeem moet doen en kunnen. Niet-functionele requirements geven de eigenschappen aan van het systeem, zoals snelheid, veiligheid en bruikbaarheid. Met andere woorden functionele requirements geven informatie over het "wat". niet-functionele requirements geven informatie over het "hoe".
 
 % wat is mode confusion?
-\subsubsection{Mode confusion?}
+\subsubsection{Mode confusion}
 De naam van het begrip zegt het eigenlijk allemaal. Bij mode confusion maakt de gebruiker een vergissing in de huidige of geactiveerde modus van het systeem. De gebruiker denk dat het systeem in modus A staat terwijl het werkelijk in modus B staat. 
 %	mode van een apparaat bijv. auto in sport en eco modus
 
@@ -95,8 +97,8 @@ Stel we nemen het eerder genoemde requirement voorbeeld: "Binnen moet het altijd
 \clearpage
 \subsection{Het vier variabelen model}
 % Het 6 variable model
-\hspace*{2cm}\includegraphics[width=10cm]{pictures/4_var_model.png}
-\cite{variabelmodel}
+%\hspace*{2cm}\includegraphics[width=10cm]{pictures/4_var_model.png}
+%\cite{variabelmodel}
 % source https://www.researchgate.net/figure/4-Variable-Model-of-Parnas-Madey_fig3_270733268
 
 \subsubsection{Monitored variabelen}
@@ -141,17 +143,20 @@ Output variabelen zijn de 'uitkomsten' van de software die worden uitgelezen doo
 \subsubsection{Ramp 5}
 \subsubsection{Ramp 6}
 
-\section{Modellen}
+\clearpage
 
+\section{Modellen}
+Een model is een schematische weergaven van de werking van een systeem. Elk soort systeem kan gemodelleerd worden. of het ingewikkeld of heel simpel is. Een model wordt altijd zo realistisch mogelijk gemaakt. Dat wil zeggen dat de belangrijke onderdelen in het model ook terug komen het "'echte"' systeem.
+\begin{comment}
 ********** NOTES **********\\
 Een goed model heeft een duidelijk object dat gemodelleerd moet worden, er is duidelijk \textbf{wat} er beschreven moet worden.
 \\
 Een goed model heeft een duidelijk doel.
 -waarom modelleren we? (voor communicatie of verificatie, analyse, etc.)
 \\
-Een goed model is traceerbaar: elk onderdeel is te herleiden tot de onderdelen van het ëchte"systeem.
+Een goed model is traceerbaar: elk onderdeel is te herleiden tot de onderdelen van het "echte"systeem.
 \\
-Een goed model is waarheidsgetrouw: relevante onderdelebn van het model komen terug in de werkelijkheid.
+Een goed model is waarheidsgetrouw: relevante onderdelen van het model komen terug in de werkelijkheid.
 \\
 een goed model is eenvoudig, maar niet te eenvoudig
 \\
@@ -163,13 +168,30 @@ Richtlijnen (tegenstrijdig heden:
 \\
 Waarheidgetrouw vs simpelheid
 duidelijheid vs. gedeeld jargon/semantiek
-
+\end{comment}
 \subsection{De Kripke structuur}
+Een kripke structuur bestaat uit binaire overgangsrelaties tussen statussen, die de werking van een systeem weergeven.\cite{kripkestructure} Aan deze overgangen en handelingen kunnen eigenschappen gekoppeld worden. Op deze manier kunnen de handelingen en eigenschappen gecontroleerd en verifieerd worden en het systeem getest worden of het op juiste wieze handelt. De acties binnen een kripke structuur lopen altijd synchroon.
 
 
-\subsection{Soorten modellen}
+\subsection{Soorten modellen} %sir model
+Andere soorten modellen zijn discrete and continuous -time Markov chains, deze zogehete "'Marko chains"' zijn een vorm van stochastic model checking. Bovendien kosten continuous chains enorm veel kracht om te berekenen. Zoals A. Philippe en C. Robert het verwoorden in hun boek \textit{Linking Discrete and Continuous Chains}\cite{linkingchains} hebben deze vormen een gebrek aan intuïtieve basis achter de theorie van Markov chains.
+
+% Winskel Model
+% SIR Model
+
+
+
 
 \subsection{Tijd}
+Tijd kan een belangrijke rol spelen in het modelleren van een systeem. De tijd die jij en ik bijhouden op een 24-uurs klok die is net zo van invloed op een systeem. De handellingen gebeuren immers in de loop van de tijd.
+In UPPAAL kan met het verloop van tijd ook gewerkt worden. De tijd verloop is altijd synchroon. Dit houdt in dat er geen 2 of meerdere acties tegelijk uitgevoerd kunnen worden.
+
+%MEER TEXT
+
+
+
+
+
 
 \subsection{Guards en invarianten}
 Guards zijn voorwaarden waaraan moet worden voldaan voordat een transitie genomen kan worden. Het is als het ware een "if statement", is de uitkomst niet true dan kan de transitie niet genomen worden.
@@ -178,20 +200,25 @@ Guards zijn voorwaarden waaraan moet worden voldaan voordat een transitie genome
 Invariant theory is al heel oud en komt oorspronkelijk uit de wiskunde. Over de jaren heen heeft het verschillende betekenissen gekregen. Hermann Weyl legt dit uitgebreid uit in zijn boek \textit{The Classical Groups}. \cite{classicalgroups} G. Rota haal uit het boek van Weyl 2 beweringen. De eerste "all geometric facts are expressed by the vanishing of invariants". en de tweede "all invariants are invariants of tensors". Echter denk ik dat deze beweringen niet van toepassing zijn in deze context.
 
 In de context van de opdracht zijn invarianten voorwaarden die kunnen worden vastgesteld aan een status. De state moet worden verlaten zodra de invariant niet meer van kracht is(als de voorwaarde niet meer behaald is) en zal geforceerd worden een beschikbare transitie te nemen.
-\vskip1cm
-heeft in zijn geschiedenis 
- He summarized this program in two basic assertions. 
-The first states that "all geometric facts are expressed by the vanishing of invariants", 
-and the second states that "all invariants are invariants of tensors"
 
 \subsection{Deadlock}
+Een deadlock ontstaat als er een proces in groep processen een geheugen locatie bezet houden en bij een andere geheugen locatie wilt komen, maar deze wordt al bezet gehouden door een ander proces in de groep. Dit is een deadlock in de ogen van een programmeur.\cite{deadlockproblem}
+
+Een deadlock heeft echter een hele andere definitie als het neerkomt op modelleren. In de wereld van modelleren heeft een deadlock niets te maken met gebruik van geheugen locaties. Een deadlock kan alleen ontstaan als er ristricties zijn gelegd aan transities. Deze restricties zorgen ervoor dat niet elke transitie altijd genomen kan worden. Als er een status is waar geen volgende transitie meer mogelijk is preken we van een deadlock.
+
 \subsection{Zeno gedrag}
 \section{Logica}
 \subsection{Propositielogica}
 \subsection{Predicatenlogica}
 \subsection{Kwantoren}
 \subsection{Dualiteiten}
+
+
 \section{Computation tree logic}
+\begin{comment}
+Computation tree logic (CTL) is a branching-time logic, meaning that its model of time is a tree-like structure in which the future is not determined; there are different paths in the future, any one of which might be an actual path that is realized. It is used in formal verification of software or hardware artifacts, typically by software applications known as model checkers, which determine if a given artifact possesses safety or liveness properties. For example, CTL can specify that when some initial condition is satisfied (e.g., all program variables are positive or no cars on a highway straddle two lanes), then all possible executions of a program avoid some undesirable condition (e.g., dividing a number by zero or two cars colliding on a highway). In this example, the safety property could be verified by a model checker that explores all possible transitions out of program states satisfying the initial condition and ensures that all such executions satisfy the property. Computation tree logic belongs to a class of temporal logics that includes linear temporal logic (LTL). Although there are properties expressible only in CTL and properties expressible only in LTL, all properties expressible in either logic can also be expressed in CTL*.
+\end{comment}
+
 \subsection{De computation tree}
 \subsection{Operator: AG}
 De betekenis van AG is makkelijk te onthouden A = Always, G = Globally. Dit houdt in dat het niet uit maakt waar je bent, je zal altijd van welke positie dan ook bij een gedefinieerd punt uitkomen.
@@ -202,6 +229,7 @@ De betekenis van AG is makkelijk te onthouden E = Exists, G = Globally.
 \subsection{Operator: AF}
 De betekenis van AF is makkelijk te onthouden A = Always, F = Eventually.
 \subsection{Operator: EF}
+De betekenis van AF is makkelijk te onthouden E = Exists, F = Eventually.
 \subsection{Operator: AX}
 \subsection{Operator: EX}
 \subsection{Operator: p U q}
@@ -223,6 +251,26 @@ Knuth: Use of Tabular Expressions for Refinement Automation,
 WEYL, H (1966).
 \textit{The Classical Groups: Their Invariants and Representations.}.\\ 
 PRINCETON, NEW JERSEY: Princeton University Press.
+
+\bibitem{kripkestructure} 
+V. Gupta, V Pratt (1993)
+\textit{Concurrent Kripke Structures}. 
+Stanford University
+
+\bibitem{stochasticmodel} 
+Kwiatkowska M., Norman G., Parker D. (2007)
+\textit{Stochastic Model Checking}. 
+Bernardo M., Hillston J. Springer, Berlin, Heidelberg
+
+\bibitem{linkingchains} 
+Philippe A., Robert C.P. (1998)  
+\textit{Linking Discrete and Continuous Chains}. 
+Robert, Christian P., Springer, New York, NY.
+
+\bibitem{deadlockproblem} 
+S. Isloor, T. Anthony Marsland (1980)
+\textit{The Deadlock Problem: An Overview}. 
+
 
 \bibitem{latexcompanion} 
 Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
@@ -249,7 +297,11 @@ Knuth: Computers and Typesetting,
 \end{document}
 
 
-% book:
-% author (release year). \textit{title}\\
-% Editors. Publisher. 
+book:
+author (release year). \textit{title}\\
+Editors., Publisher. 
 
+
+What is a good model? Artikel F. Vaandrager
+
+What is a model? E griffiths
