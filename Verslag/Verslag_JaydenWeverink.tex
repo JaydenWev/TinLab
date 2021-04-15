@@ -37,7 +37,13 @@
 \section{Inleiding}
 Zie hier een referentie naar Royce~\cite{royce1987managing} en nog een naar Clarke~\cite{modelchecking}\ldots 
 
-\clearpage
+
+
+
+\clearpage %========================================================================
+
+
+
 
 \section{Requirements}
 
@@ -94,7 +100,14 @@ De specificaties geven geen ruimte voor interpetatie, omdat ze 'meetbare' inform
 
 Stel we nemen het eerder genoemde requirement voorbeeld: "Binnen moet het altijd warm zijn." Als we dit vertalen naar een specificatie wordt het: "Binnen moet het altijd minimaal 20$^{\circ}$C zijn."
 
-\clearpage
+
+
+
+\clearpage %========================================================================
+
+
+
+
 \subsection{Het vier variabelen model}
 % Het 6 variable model
 %\hspace*{2cm}\includegraphics[width=10cm]{pictures/4_var_model.png}
@@ -143,7 +156,13 @@ Output variabelen zijn de 'uitkomsten' van de software die worden uitgelezen doo
 \subsubsection{Ramp 5}
 \subsubsection{Ramp 6}
 
-\clearpage
+
+
+
+\clearpage %========================================================================
+
+
+
 
 \section{Modellen}
 Een model is een schematische weergaven van de werking van een systeem. Elk soort systeem kan gemodelleerd worden. of het ingewikkeld of heel simpel is. Een model wordt altijd zo realistisch mogelijk gemaakt. Dat wil zeggen dat de belangrijke onderdelen in het model ook terug komen het "'echte"' systeem.
@@ -170,7 +189,7 @@ Waarheidgetrouw vs simpelheid
 duidelijheid vs. gedeeld jargon/semantiek
 \end{comment}
 \subsection{De Kripke structuur}
-Een kripke structuur bestaat uit binaire overgangsrelaties tussen statussen, die de werking van een systeem weergeven.\cite{kripkestructure} Aan deze overgangen en handelingen kunnen eigenschappen gekoppeld worden. Op deze manier kunnen de handelingen en eigenschappen gecontroleerd en verifieerd worden en het systeem getest worden of het op juiste wieze handelt. De acties binnen een kripke structuur lopen altijd synchroon.
+Een kripke structuur bestaat uit binaire overgangsrelaties tussen state, die de werking van een systeem weergeven.\cite{kripkestructure} Aan deze overgangen en handelingen kunnen eigenschappen gekoppeld worden. Op deze manier kunnen de handelingen en eigenschappen gecontroleerd en verifieerd worden en het systeem getest worden of het op juiste wieze handelt. De acties binnen een kripke structuur lopen altijd synchroon.
 
 
 \subsection{Soorten modellen} %sir model
@@ -199,28 +218,53 @@ Guards zijn voorwaarden waaraan moet worden voldaan voordat een transitie genome
 % invariant [https://link.springer.com/chapter/10.1007/978-88-470-2107-5_4]
 Invariant theory is al heel oud en komt oorspronkelijk uit de wiskunde. Over de jaren heen heeft het verschillende betekenissen gekregen. Hermann Weyl legt dit uitgebreid uit in zijn boek \textit{The Classical Groups}. \cite{classicalgroups} G. Rota haal uit het boek van Weyl 2 beweringen. De eerste "all geometric facts are expressed by the vanishing of invariants". en de tweede "all invariants are invariants of tensors". Echter denk ik dat deze beweringen niet van toepassing zijn in deze context.
 
-In de context van de opdracht zijn invarianten voorwaarden die kunnen worden vastgesteld aan een status. De state moet worden verlaten zodra de invariant niet meer van kracht is(als de voorwaarde niet meer behaald is) en zal geforceerd worden een beschikbare transitie te nemen.
+In de context van de opdracht zijn invarianten voorwaarden die kunnen worden vastgesteld aan een state. De state moet worden verlaten zodra de invariant niet meer van kracht is(als de voorwaarde niet meer behaald is) en zal geforceerd worden een beschikbare transitie te nemen.
 
 \subsection{Deadlock}
 Een deadlock ontstaat als er een proces in groep processen een geheugen locatie bezet houden en bij een andere geheugen locatie wilt komen, maar deze wordt al bezet gehouden door een ander proces in de groep. Dit is een deadlock in de ogen van een programmeur.\cite{deadlockproblem}
 
-Een deadlock heeft echter een hele andere definitie als het neerkomt op modelleren. In de wereld van modelleren heeft een deadlock niets te maken met gebruik van geheugen locaties. Een deadlock kan alleen ontstaan als er ristricties zijn gelegd aan transities. Deze restricties zorgen ervoor dat niet elke transitie altijd genomen kan worden. Als er een status is waar geen volgende transitie meer mogelijk is preken we van een deadlock.
+Een deadlock heeft echter een hele andere definitie als het neerkomt op modelleren. In de wereld van modelleren heeft een deadlock niets te maken met gebruik van geheugen locaties. Een deadlock kan alleen ontstaan als er ristricties zijn gelegd aan transities. Deze restricties zorgen ervoor dat niet elke transitie altijd genomen kan worden. Als er een state is waar geen volgende transitie meer mogelijk is preken we van een deadlock.
 
 \subsection{Zeno gedrag}
 Zeno gedrag is een wiskundige term. het beschrijft een situatie waarin in een bepaalde tijd oneindig veel transities ontstaan.\cite{sufficientconditions} Doordat er oneindig veel stappen worden gezet in een korte (of lange) tijd, moeten de stappen extreem klein zijn. Dat moet wel want er is immers geen einde aan te krijgen. 
 
 
-\clearpage
+
+
+\clearpage %========================================================================
+
+
+
 
 \section{Logica}
+Logica is een de wetenschap die focussed op de regels van redeneren.
 \subsection{Propositielogica}
-De propositielogica is een tak van logica die zich bezighoudt met het redeneren met proposities. Proposities zijn uitspraken of beweringen die ofwel waar, ofwel onwaar zijn.
+Een propositie is een taaluiting ofwel een bewering of uitspraak uitgedrukt in een zin. De zin beschrijft een situatie of stand van zaken. 
+Deze zin heeft een waarheidswaarde van 0 (nietwaar) of 1 (waar), het kan absoluut niet beide zijn. Bijv. "'De auto staat stil."' of 
+
+In de propositielogica worden deze proposities gebruik is samenwerking met logische operatoren zoals bijv. AND en OR.\cite{propositionlogic}
+
 \subsection{Predicatenlogica}
-Predicatenlogica is wiskundig-formele logica waarin expliciet predicaten voorkomen, waarmee eigenschappen van en relaties tussen verzamelingen objecten worden beschreven. Vaak wordt vooral de eerste-orde-predicatenlogica bedoeld
+Een predicaat is een eigenschap of kwaliteit dat over iets gezegd gezegd kan worden. Door gebruik te maken van predicatenlogica kan een zin met een predicaat vertaald worden op een dusdanige manier dat een (computer) systeem dit kan begrijpen.
+Het predicaat wordt vertaald naar een wiskundige formule. In deze formule zijn alle eigenschappen en relaties nogsteeds zichtbaar.
+
 \subsection{Kwantoren}
-Een kwantor (soms wordt ook quantor gebruikt) is een taalelement in de wiskunde, in het bijzonder in de logica. Kwantoren binden variabelen.
+Met kwantoren worden eigenschappen gekoppeld aan een onderwerp waarover zei informatie verschaffen. Stel de volgende kwantoren over rotten appels in een winkel
+Een voorbeeld hiervan is:
+\begin{description}
+\item $\exists$xP(x): Er zijn appels die rot zijn.
+\item $\forall$xP(x): Alle appels zijn verrot.
+\end{description}
+Als we in deze kwantoren stellen dat P staat voor verrot en de x voor appels dan zijn de beweringen die erachter staan van kracht.
+
 
 \subsection{Dualiteiten}
+Dualiteit betekend dat van een stelling er een andere stelling bestaat met dezelfde betekenis.
+\begin{center}
+$\neg\forall$xP(x): $\exists$x$\neg$P(x)
+\end{center}
+
+Als we weer het voorbeeld van de appels nemen staat hier effectief links niet alle appels zijn verrot. Aan de rechter kant staat Er zijn appels die niet verrot zijn.
 % presentatie 03-15
 
 \section{Computation tree logic}
@@ -229,28 +273,76 @@ Computation tree logic (CTL) is a branching-time logic, meaning that its model o
 \end{comment}
 
 \subsection{De computation tree}
+Computation tree logic is een model waar de tijd een vertakkings structuur aan states heeft, waarin de toekomst nog onbepaald is. Er zijn verschillende wegen die afgelegd kunnen worden, waarvan er één mogelijk werkelijk genomen zal worden.
+
+Een computation tree wordt opgebouwd vanuit de begin state. vervolgens komt er nog een laag aan de hand van alle transities die deze begin state kan nemen. De tweede laag bestaat dan uit alle states waar de transities van de begin state eindigen. Dit kan doorgaan tot er state tegen komt waar geen volgende transitie uit te volgen is.
+
 \subsection{Operator: AG}
-De betekenis van AG is makkelijk te onthouden A = Always, G = Globally. Dit houdt in dat het niet uit maakt waar je bent, je zal altijd van welke positie dan ook bij een gedefinieerd punt uitkomen.
+De betekenis van AG is makkelijk te onthouden A = Always, G = Globally. Dit houdt in dat het niet uit maakt waar je bent, je zal altijd van welke positie dan ook bij een gedefinieerde state uitkomen.
 
 \subsection{Operator: EG}
-De betekenis van AG is makkelijk te onthouden E = Exists, G = Globally.
+De EG operator staat voor ''Exists Globally"'. Dit betekent dat er van alle wegen een aantal zijn, niet allemaal, die leiden naar het gedefinieerde state. 
 
 \subsection{Operator: AF}
-De betekenis van AF is makkelijk te onthouden A = Always, F = Eventually.
-\subsection{Operator: EF}
-De betekenis van AF is makkelijk te onthouden E = Exists, F = Eventually.
-\subsection{Operator: AX}
-\subsection{Operator: EX}
-\subsection{Operator: p U q}
-\subsection{Operator: p R q}
-\subsection{Fairness}
-\subsection{Liveness}
-\newpage
+De AF operator kan worden samengevat als "'Always Evetually"'. Dit kan worden vertaald naar het niet uit welke weg wordt genomen, er is altijd een moment waarop het gedefinieerde state is bereikt.
 
-\newpage
+\subsection{Operator: EF}
+De EF lijkt uiteraard op de AF operatoo, alleen geld bij de EF operator dat \textbf{niet} bij alle wegen de gedefiniëerde state wordt bereikt. Met andere woorden op enkele wegen zal er uiteindelijk de gedefiniëerde state worden bereik. Deze operator kan dan ook worden samen gevat als "'Exists Eventually"'.
+
+\subsection{Operator: AX}
+De AX operator is anders dan de vorigen operatoren. Het heeft namelijk alleen maar betrekking tot de volgende state. De AX operator kan worden samengevat als "'Always Next"', wat dus inhoud at dus elk volgende state de gedefinieerde state zal bevatten.
+
+\subsection{Operator: EX}
+Het spreekt voor zich dat de EX operator ook alleen voor de volgende state zal gelden. De EX operator staat dan voor "'Exists Next"'. Voor de EX operator geld dat er in enkele volgende states de gewenste state bereikt zal zijn.
+
+\subsection{Operator: p U q}
+Bij deze operator draait het vooral om de U. De U kan worden verstaan als "'Until"', zo staat er hier p is waar tot dat q waar is. Anders gezegd is p waar en ophet moment dat dat stopt, p onwaar wordt, dan wordt q waar. Het is moeglijk voor p en q om uiteindelijk beide onwaar te worden, maar dit gebreurt pas nadat de "'cyclus"' van p naar q minimaal één keer is doorlopen.
+
+Een raar maar simpel voorbeeld hiervan zou zijn een doos die wordt getild door persoon p, p is waar. Na enige tijd laat persoon p de doos vallen, die de doos wordt gevangen door persoon q. Op dit moment word q waar en p onwaar. Het komt dus niet voor dat de p en q samen waar zijn.
+
+Deze operator kan genest worden in een Always of Exist operator. Door dit te doen komt er het volgende uit:
+\\
+A(p U q): Voor deze samenstelling geld dat op alle wegen de p U q operator van kracht is.
+\\
+E(p U q): Hier geld dat op enkele wegen de p U q operator van kracht is.
+
+\subsection{Operator: p R q}
+De R operator is zeer gelijk aan de U operator. Ze bevatten beiden de eigenschap dat nadat p niet meer waar is dat q waar is. Er is een eigenschap die echter het verschil maakt. De R operator heeft een moment, een state, waarin zowel p als q waar zijn.
+
+Om dit in hetzelfde voorbeeld te verduidelijken. Draagt persoon p nu weer de door, p is waar. Zodra persoon p moe wordt geeft hij de doos over aan persoon q. Let op dat tijdens het geven van de doos er een moment is waarin zowel persoon p als q de doos vasthebben. Dit is het verschil met de U operator, er is een state waarin beide p en q waar zijn.
+
+Net als de U operator is de R operator ok te nestelen in de Always en de Exists operatoren. Hieruit volgt:
+\\
+A(p R q): Voor deze samenstelling geld dat op alle wegen de p R q operator van kracht is.
+\\
+E(p R q): Hier geld dat op enkele wegen de p R q operator van kracht is.
+
+
+
+\subsection{Fairness}
+De letterlijke vertaling van fairness is eerlijkheid. Dat is ook een beetje waar de fairness die hier wordt edoeld op slaat. Fairness betekent namelijk dat alle taken in een systeem "'aandacht"' zullen krijgen. De zogeheten aandacht wordt eerlijk verdeeld.
+
+Als we fairness uitdrukken in operatoren dan komen we uit op AG(AF(p)). Als wij stellen de p staat voor aandacht aan een process. Dan staat hier nu dat het niet uit maakt welke transitie route we aflegen uiteindelijk zal het process aandacht krijgen, zelfs als het al een keer aandacht heeft gehad. het is dus in feite een loop.
+%elke taak krijgt aandacht en als die dat heeft gehad zal hij het vaker krijgen
+
+\subsection{Liveness}
+Wat gezegd zou kunnen worden over liveness is dat het een vorm van fairness is. Dit komt door dat de operator schrijfwijze  vrijwel gelijk is aan die van fairness. liveness wordt geschreven als AG(r $\rightarrow$ AF(p)), wat lijk op fairness AG(AF(p)). Wat "'extra"' is bij liveness is de r $\rightarrow$ genesteld in de AG. De pijl kan worden gezien als een if-statement, if r = true dan AF, met de r als de bepalende factor. Als de r waar is dan is er een geval van welke weg, of transitie, we ook nemen daar komen we vroeg of laat in een state waar p geld.
+
+Zoals in het artikel van B. Alpern en B. Schneider\cite{definingliveness} wordt gezegd is kan liveness voorkomen in 3 vormen starvation freedom, termination en guarenteed service. Dez vormen zijn ook weer terug te vinden in het boek \textit{Synchronization Algorithms ans concurrent Programming}\cite{synchronizationalgorithms} van G. Taubenfeld
+
+
+
+
+
+\clearpage  %========================================================================
+
+
+
+
 \bibliography{references} % DIT ZIJN VOORBEELDEN
-********** EXAMPLES **********
+
 \begin{thebibliography}{9}
+
 \bibliography{refrences}
 \bibitem{variabelmodel} 
 Knuth: Use of Tabular Expressions for Refinement Automation,
@@ -276,14 +368,30 @@ Philippe A., Robert C.P. (1998)
 \textit{Linking Discrete and Continuous Chains}. 
 Robert, Christian P., Springer, New York, NY.
 
+\bibitem{propositionlogic}
+H. K. Büning, T. Lettman (1999).
+\textit{Proposition logic: deduction an algorithms}\\
+Cambridge university press, Cambridge. 
+
+\bibitem{synchronizationalgorithms}
+G. Taubefeld (2006).
+\textit{Synchronization Algorithms and Concurrent Programming}\\
+Pearson Education Limited, Edinburgh. 
+
 \bibitem{deadlockproblem} 
 S. Isloor, T. Anthony Marsland (1980)
 \textit{The Deadlock Problem: An Overview}. 
+% geen publisher
 
 \bibitem{sufficientconditions}
 A. D. Ames, A. Abate and S. Sastry (2005)
 \textit{Sufficient Conditions for the Existence of Zeno Behavior}.
 University of Californioa, Berkeley.
+
+\bibitem{definingliveness} 
+B. Alpern, F. B. Schneider (1985)
+\textit{Defining Liveness}. 
+% geen publisher
 
 \bibitem{latexcompanion} 
 Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
@@ -311,7 +419,9 @@ Knuth: Computers and Typesetting,
 
 
 book:
-author (release year). \textit{title}\\
+\bibitem{}
+author (release year).
+\textit{title}\\
 Editors., Publisher. 
 
 
