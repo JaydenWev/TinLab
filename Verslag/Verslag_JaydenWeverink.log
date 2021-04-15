@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  15 APR 2021 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.6)  15 APR 2021 18:26
 entering extended mode
 **./Verslag_JaydenWeverink.tex
 (Verslag_JaydenWeverink.tex
@@ -250,25 +250,53 @@ Overfull \hbox (4.00044pt too wide) in paragraph at lines 127--128
 
 [6
 
-] [7]
+]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 196.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 163.
 
- [8
 
-] [9] [10
 
-] [11] [12] [13] (Verslag_JaydenWeverink.bbl)
+LaTeX Warning: Citation `therac25' on page 7 undefined on input line 163.
+
+[7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+[8
+
+] [9
+
+] [10] [11
+
+] [12] [13] [14] (Verslag_JaydenWeverink.bbl)
 (Verslag_JaydenWeverink.bbl)
-Overfull \hbox (103.58398pt too wide) in paragraph at lines 348--351
+Overfull \hbox (103.58398pt too wide) in paragraph at lines 380--383
 \OT1/cmtt/m/n/10 https://www.researchgate.net/figure/4-Variable-Model-of-Parnas
 -Madey[]fig3[]270733268 
  []
 
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 398.
 
-[14
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 439.
+
+[15
 
 ] (Verslag_JaydenWeverink.aux)
 
@@ -276,10 +304,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2231 strings out of 479321
- 34221 string characters out of 2856584
- 351283 words of memory out of 3000000
- 19695 multiletter control sequences out of 15000+600000
+ 2232 strings out of 479321
+ 34223 string characters out of 2856584
+ 351288 words of memory out of 3000000
+ 19696 multiletter control sequences out of 15000+600000
  407345 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,5n,74p,1294b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -296,9 +324,9 @@ ers/jayde/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><D:/Users/jayde/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmsy7.pfb><D:/Users/jayde/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmtt10.pfb>
-Output written on Verslag_JaydenWeverink.pdf (15 pages, 162893 bytes).
+Output written on Verslag_JaydenWeverink.pdf (16 pages, 166268 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

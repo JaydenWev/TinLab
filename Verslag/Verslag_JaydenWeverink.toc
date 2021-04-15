@@ -10,34 +10,34 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Controlled variabelen}{6}{}%
 \contentsline {subsubsection}{\numberline {2.3.3}Input variabelen}{6}{}%
 \contentsline {subsubsection}{\numberline {2.3.4}Output variabelen}{6}{}%
-\contentsline {subsection}{\numberline {2.4}Rampen}{6}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Therac-25}{6}{}%
-\contentsline {subsubsection}{\numberline {2.4.2}Vlucht 1951}{7}{}%
-\contentsline {subsubsection}{\numberline {2.4.3}Tsjernobyl 1986}{7}{}%
-\contentsline {subsubsection}{\numberline {2.4.4}Ethiopian Airlines 302}{7}{}%
-\contentsline {subsubsection}{\numberline {2.4.5}Ramp 5}{7}{}%
-\contentsline {subsubsection}{\numberline {2.4.6}Ramp 6}{7}{}%
-\contentsline {section}{\numberline {3}Modellen}{8}{}%
-\contentsline {subsection}{\numberline {3.1}De Kripke structuur}{8}{}%
-\contentsline {subsection}{\numberline {3.2}Soorten modellen}{8}{}%
-\contentsline {subsection}{\numberline {3.3}Tijd}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Guards en invarianten}{8}{}%
-\contentsline {subsection}{\numberline {3.5}Deadlock}{9}{}%
-\contentsline {subsection}{\numberline {3.6}Zeno gedrag}{9}{}%
-\contentsline {section}{\numberline {4}Logica}{10}{}%
-\contentsline {subsection}{\numberline {4.1}Propositielogica}{10}{}%
-\contentsline {subsection}{\numberline {4.2}Predicatenlogica}{10}{}%
-\contentsline {subsection}{\numberline {4.3}Kwantoren}{10}{}%
-\contentsline {subsection}{\numberline {4.4}Dualiteiten}{10}{}%
-\contentsline {section}{\numberline {5}Computation tree logic}{11}{}%
-\contentsline {subsection}{\numberline {5.1}De computation tree}{11}{}%
-\contentsline {subsection}{\numberline {5.2}Operator: AG}{11}{}%
-\contentsline {subsection}{\numberline {5.3}Operator: EG}{11}{}%
-\contentsline {subsection}{\numberline {5.4}Operator: AF}{11}{}%
-\contentsline {subsection}{\numberline {5.5}Operator: EF}{11}{}%
-\contentsline {subsection}{\numberline {5.6}Operator: AX}{11}{}%
-\contentsline {subsection}{\numberline {5.7}Operator: EX}{12}{}%
-\contentsline {subsection}{\numberline {5.8}Operator: p U q}{12}{}%
-\contentsline {subsection}{\numberline {5.9}Operator: p R q}{12}{}%
-\contentsline {subsection}{\numberline {5.10}Fairness}{12}{}%
-\contentsline {subsection}{\numberline {5.11}Liveness}{13}{}%
+\contentsline {subsection}{\numberline {2.4}Rampen}{7}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Therac-25}{7}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}Vlucht 1951}{8}{}%
+\contentsline {subsubsection}{\numberline {2.4.3}Tsjernobyl 1986}{8}{}%
+\contentsline {subsubsection}{\numberline {2.4.4}Ethiopian Airlines 302}{8}{}%
+\contentsline {subsubsection}{\numberline {2.4.5}Ramp 5}{8}{}%
+\contentsline {subsubsection}{\numberline {2.4.6}Ramp 6}{8}{}%
+\contentsline {section}{\numberline {3}Modellen}{9}{}%
+\contentsline {subsection}{\numberline {3.1}De Kripke structuur}{9}{}%
+\contentsline {subsection}{\numberline {3.2}Soorten modellen}{9}{}%
+\contentsline {subsection}{\numberline {3.3}Tijd}{9}{}%
+\contentsline {subsection}{\numberline {3.4}Guards en invarianten}{9}{}%
+\contentsline {subsection}{\numberline {3.5}Deadlock}{10}{}%
+\contentsline {subsection}{\numberline {3.6}Zeno gedrag}{10}{}%
+\contentsline {section}{\numberline {4}Logica}{11}{}%
+\contentsline {subsection}{\numberline {4.1}Propositielogica}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Predicatenlogica}{11}{}%
+\contentsline {subsection}{\numberline {4.3}Kwantoren}{11}{}%
+\contentsline {subsection}{\numberline {4.4}Dualiteiten}{11}{}%
+\contentsline {section}{\numberline {5}Computation tree logic}{12}{}%
+\contentsline {subsection}{\numberline {5.1}De computation tree}{12}{}%
+\contentsline {subsection}{\numberline {5.2}Operator: AG}{12}{}%
+\contentsline {subsection}{\numberline {5.3}Operator: EG}{12}{}%
+\contentsline {subsection}{\numberline {5.4}Operator: AF}{12}{}%
+\contentsline {subsection}{\numberline {5.5}Operator: EF}{12}{}%
+\contentsline {subsection}{\numberline {5.6}Operator: AX}{12}{}%
+\contentsline {subsection}{\numberline {5.7}Operator: EX}{13}{}%
+\contentsline {subsection}{\numberline {5.8}Operator: p U q}{13}{}%
+\contentsline {subsection}{\numberline {5.9}Operator: p R q}{13}{}%
+\contentsline {subsection}{\numberline {5.10}Fairness}{13}{}%
+\contentsline {subsection}{\numberline {5.11}Liveness}{14}{}%
