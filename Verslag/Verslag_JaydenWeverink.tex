@@ -30,12 +30,29 @@
     \vfill
     \vfill
 \end{titlepage}
-\newpage
+
+
+
+
+\clearpage %========================================================================
+
+
+
+
 \tableofcontents
 
-\newpage
+
+
+
+\clearpage %========================================================================
+
+
+
+
 \section{Inleiding}
-Zie hier een referentie naar Royce~\cite{royce1987managing} en nog een naar Clarke~\cite{modelchecking}\ldots 
+Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renovatie van een groot aantal sluizen noodzakelijk is. Hiervoor zal de sluis eerst gemodelleerd moeten worden. Dit verslag bied als een basis voor de kennis omtrent modelleren.
+Dit verslag is gemaakt ter ondersteuning van de opdracht van het Ministerie van Infrastructuur en Waterstaat. Hier wordt verduidelijking gegeven in een aantal onderdelen met betrekking tot het ontwerp proces, modellen en logica.
+
 
 
 
@@ -166,7 +183,6 @@ Verder wil ik wel melden dat het ontwerp van de therac-25 slordig is uitgevoerd.
 
 
 
-
 \clearpage %========================================================================
 
 
@@ -179,14 +195,91 @@ Een boeing 737/800 van Turkish Airline is neergestort op ongeveer 1.5km voor zij
 \item [Datum en tijd] \hfill \\
 25 february 2009
 \item [Oorzaak] \hfill \\
+Een van de redenen van het neerstorten van de boeing is een kapotte hoogtemeter. Op een hoogte van 600 meter gaf de hoogtemeter een hoogte van -2 meter aan. Dit gaf als gevolg dat het systeem de piloten een signaal gaf dat er veranderingen aangebracht moesten worden, waaronder naar een lagere versnelling schakelen.
+
+Het ongewone handelen van het vliegtuig is de piloten niet opgevallen. Ook de ongebruikelijke aankondigingen voor die hoogte zijn de piloten onopgemerkt gegaan. Als de piloten correct hadden gehandeld en de "'foutieve"' instructies van het systeem hadden opgemerkt. had dit ongeluk voorkomen kunnen worden.
+
+Vanuit de ogen van het 4 variabellen model heeft dit ongeluk veel problemen in mijn ogen. De hoogtemeter gaf een incorrecte waarde aan, wat aangeeft dat een hoogtesensor defect was, waardoor er incorrecte input variabelen zijn doorgegeven. Hierdoor zijn er verkeerde aannames gemaakt in de software. Het opmerkelijke verschil in hoogte had in de software ook afgevangen kunnen worden, dit vind ik dan ook weer een software matige fout.\\
+Verder is er ook door de piloten incorrect gehandeld. De piloten hadden de foute signalen van het systeem moeten opmerken. Wat kan worden vertaald naar de monitored variabelen, de piloten, die niet goed hebben gehandel in deze situatie. De piloten worden uiteindelijk ook aansprakelijk gesteld in \textit{Analysis of the crash of TK 1951 using CATS}\cite{crash1951tk} waarin de crash werd onderzocht.
 \end{description}
 
+
+
+
+\clearpage %========================================================================
+
+
+
+
 \subsubsection{Tsjernobyl 1986}
+\begin{description}
+\item [Beschrijving] \hfill \\
+Tsjernobyl is de grootste kernramp aller tijden. Op de dag van het ongeluk werd er een test uitgevoerd. Doordat er een andere elektriciteits centrale was uitgevallen moest er worden getest of de reactor genoeg vermogen gaf voor de koelinstallatie, terwijl de noodaggregaten bezig waren met opstarten. 
 
-\subsubsection{Ethiopian Airlines 302}
+\item [Datum en tijd] \hfill \\
+26 april 1986.
 
-\subsubsection{Ramp 5}
-\subsubsection{Ramp 6}
+\item [Oorzaak] \hfill \\
+Om meer vermogen te wekken zijn 20 van de 26 veiligheidsstaven omhoog gehaald. Dit heeft gewerkt, maar omdat er nog maar 6 staven van de bedoelde 26 in positie waren bleef het vermogen alleen maar stijgen. Op het moment dat de staven weer omlaag gehaald moesten worden ging het mis. De regelstaven hadden een ontwerp fout. De punt was zo gevormd dat het eerst het water aan de kant schoven voor ze een remmende effect konden uitoefenen. Hierdoor heeft het vermogen onder in de centrale op kunnen lopen, wat resulteerde in een explosie, die op zijn beurt ervoor zorgde dat de regelstaven klem kwamen te zitten. De regelstaven zaten op een derde van de oorspronkelijke diepte, hierdoor heeft het vermogen kunnen oplopen tot 10x de normale vermogen. De regelstaven konden dit niet meer aan en smolten waaruit nog een explosie ontstond.
+
+Aan deze reeks van gebeurtenissen is een duidelijke fout te halen, de regelstaven. De regelstaven waren zo gevormd dat de het water werd wegzet wanneer ze terug op hun plaats werden gezet. Hierdoor zijn de reactie niet snel genoeg geremd. Hier is warschijnlijk geen rekening mee gehouden in de requirements voor de regelstaven.
+\end{description}
+
+
+
+
+\clearpage %========================================================================
+
+
+
+
+\subsubsection{Kernramp Fukushima}
+\begin{description}
+\item [Beschrijving] \hfill \\
+In fukushima was er een kerncentrale aan de kust. Alle reactoren waren stilgezet omdat de centrale werd getroffen door een aardbeving. Doordat de aarbeving plaatsvond op zee volgde er na de aarbeving ook nog een tsunami die de centrale ook schade aanbracht.
+\item [Datum en tijd] \hfill \\
+11 maart 2011
+\item [Oorzaak] \hfill \\
+Door de aardbeving zijn de actieven reactoren stopgezet. Omdat er nu geen elektriciteit meer werd gewekt moest er nu overgeschakeld worden op noodstroomvoorzieningen om het koelsysteem draaiende te houden. Doordat de beschermingen tegen vloedgolven niet voldoende waren zijn gebouwen beschadigd, hierdoor kwamen reactoren 1 tot en met 4 zonder stroom. Hierdoor zijn bij elke reactor verschillende problemen ontstaan.
+
+Dit is een duidelijk voorbeeld van een gebrek in de specificaties. De kerncentrale was voorzien van bescherming tegen aarbevingen maar niet goed genoeg tegen bescherming tegen vloedgolven. De vloedgolf was uitzonderlijk hoog, maar de beschermingen die aanwezig waren maren maar bestemd voor een derde van de werkelijke hoogte wat uiteraard veel te laag is.
+
+\end{description}
+\subsubsection{vlucht 3054}
+\begin{description}
+\item [Beschrijving] \hfill \\
+Linhas Aéreas-vlucht 3054 had mankementen tijdens de landing. Nadat het toestel succesvol de grond bereikte is het niet instaat gekomen om het toestel tot stilstand te krijgen, met grote gevolgen van dien. Nadat het vliegtuig doorschoot over de landingsbaan is het in brand gevlogen. In totaal zijn er 195 mensen omgekomen bij het ongeluk
+
+\item [Datum en tijd] \hfill \\
+17 juli 2007.
+\item [Oorzaak] \hfill \\
+Nadat de landing is het systeem gefaald in het activeren van de spoilers, bovendien zijn de automatische remmen ook niet geactiveerd. Dit zijn beide cruciale oonderdelen voor het tot stand komen van het toestel. De onderdelen ter sprake waren niet defect, hierdoor kan gezegd worden dat de output variabelen hier fout zetten. De onderdelen zijn niet aangezet terwijl dit wel had gemoeten.
+
+\end{description}
+
+
+
+
+\clearpage %========================================================================
+
+
+
+
+\subsubsection{Hoofddorp}
+\begin{description}
+\item [Beschrijving] \hfill \\
+Doordat een intercity met een te hoge snelheid in de bocht is gegaan is de intercity ontspoord. Dit ongeval heeft in totaal 5 doden gekost en meer dan dertig gewonden.
+
+\item [Datum en tijd] \hfill \\
+30 november 1992.
+
+\item [Oorzaak] \hfill \\
+Door de werkzaamheden moesten treinen een S-bocht maken om de werkzaamheden te kunnen passeren. In deze S-bocht was de maximale snelheid 60km/h. Om een trein te laten ontsporen moet deze snelheid overschreden worden. Uit onderzoek is gebleken dat de trein tussen de 123 en 130km/h heeft gereden. De machinisten beweerd geen signaal te hebben gekregen voor een maximum snelheid, terwijl een snelheidbord met erop 60 langs de rails stond. Door de hoogte van de cabine waar de machinist in zat heeft hij de tekst op het word niet kunnen zien. en ging er vanuit dat er 90 op stond.
+
+De is mischien wel een vergezocht kritiek punt, maar blijkt uit dit voorbeeld iets wat toch cruciaal kan zijn. Een requirement van een verkeersbord, waarvan we kunnen uitgaan dat die er is, is dat een verkeersbord duidelijk zichtbaar moet zijn. hier is duidelijk dus niet aan voldaan vanuit de ogen van de machinist. Hier ben ik het mee eens, het verkeerdbord moet goed zichtbaar zijn, ookal is de cabine hoger dan een gemiddelde cabine.
+
+\end{description}
+
 
 
 
@@ -399,6 +492,11 @@ Bernardo M., Hillston J. Springer, Berlin, Heidelberg.
 Philippe A., Robert C.P. (1998)  
 \textit{"'Linking Discrete and Continuous Chains"'}. 
 Robert, Christian P., Springer, New York, NY.
+
+\bibitem{crash1951tk}
+B.J.M. Ale, L.J. Bellamy, J. Cooper, D. Ababei, D. Kurowicka, O. Morales, J. Spouge, (2010).
+\textit{Analysis of the crash of TK 1951 using CATS}\\
+% geen publisher
 
 \bibitem{propositionlogic}
 H. K. Büning, T. Lettman (1999).
